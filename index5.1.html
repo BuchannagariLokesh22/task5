@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProShop - E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <h1>🛒 ProShop</h1>
+      <p>Your one-stop tech store</p>
+    </div>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search for products..." />
+      <select id="categoryFilter">
+        <option value="All">All</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Wearables">Wearables</option>
+        <option value="Photography">Photography</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Gadgets">Gadgets</option>
+      </select>
+    </div>
+    <div class="cart-icon">
+      <button id="toggle-cart">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="product-list" class="product-container"></section>
+
+    <aside class="cart-section hidden" id="cart-panel">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total Items: <span id="cart-total">0</span></p>
+      <button id="clear-cart">Clear Cart</button>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ProShop Inc. | Optimized E-Commerce Experience</p>
+  </footer>
+</body>
+</html>
